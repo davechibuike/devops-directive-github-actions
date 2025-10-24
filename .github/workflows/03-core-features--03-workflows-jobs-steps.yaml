@@ -16,6 +16,9 @@ jobs:
       - job-1
     steps:
       - run: echo "Multiple jobs can run in parallel"
+      - run: echo "job 1 ran first"
+      - run: echo "job 1 almost done"
+      - run: echo "job 1 done..."
   job-3:
     runs-on: ubuntu-24.04
     needs:
